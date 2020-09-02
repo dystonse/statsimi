@@ -1,5 +1,8 @@
 # statsimi
 
+## Fork
+We forked this from ad-freiburg to add Docker integration, which shall enable us to use it within [dystonse-docker](https://github.com/dystonse/dystonse-docker).
+
 **Work in progress, without any warranty**
 
 Framework for station similarity classification.
