@@ -14,4 +14,6 @@ COPY . .
 RUN pip install .
 RUN statsimi model --model_out classify.mod --train niedersachsen-latest.osm
 
-CMD statsimi http --model classify.mod --http_port 2000
+ENV STATSIMI_PORT 3333
+
+CMD statsimi http --model classify.mod --http_port $STATSIMI_PORT
